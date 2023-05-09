@@ -32,4 +32,19 @@ public class ProfilePage extends BasePage{
         isElementDisplayed(newContact);
         return this;
     }
+
+    @FindBy(css = ".contact-item_card__2SOIM")
+    WebElement contactField;
+    public ProfilePage clickOnContactField() {
+        click(contactField);
+        return this;
+    }
+
+    @FindBy(xpath = "//button[contains(.,'Remove')]")
+    WebElement removeButton;
+    public ProfilePage clickOnRemoveButton() {
+        click(removeButton);
+
+        return this;
+    }
 }

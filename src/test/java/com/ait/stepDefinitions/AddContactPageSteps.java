@@ -34,4 +34,14 @@ public class AddContactPageSteps {
     public void verify_newContact_is_created() {
         new ProfilePage(driver).isNewContactCreated();
     }
+
+    @And("User click on Contact field")
+    public void click_Contact_field() {
+        new ProfilePage(driver).clickOnContactField();
+    }
+
+    @And("User click on Remove button")
+    public void click_Remove_button() {
+        new ProfilePage(driver).clickOnRemoveButton();
+    }
 }

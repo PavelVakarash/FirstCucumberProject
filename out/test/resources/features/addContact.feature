@@ -11,5 +11,7 @@ Feature: AddContact
     And User click on ADD button
     And User fill Add Contact form
     And User click on SAFE button
-    Then User verifies new contact is created
+    And User verifies new contact is created
+    And User click on Contact field
+    Then User click on Remove button
     And User quites browser
